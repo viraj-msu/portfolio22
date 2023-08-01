@@ -48,11 +48,18 @@ body {
 
 
 }
+.mode{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    /* transform: rotateY('180'); */
+  
+
+}
 
 nav {
     padding: 0 40px;
     z-index: 2;
-    position: fixed;
     width: 55vw;
     height: 70px;
     /* background-color: #1D1E29; */
@@ -75,11 +82,15 @@ nav {
     font-weight: 800;
     font-size: 1.8em;
 }
-.logo img{
+.logo a img{
     margin-top: 12px;
     width: 40px;
-
+    /* background-color: #797979; */
+    /* color: #050810; */
+    /* color: var(--secondary-color); */
+    filter: grayscale(100%);   
 }
+
 
 #icon {
     z-index: 4;
@@ -87,6 +98,7 @@ nav {
 
     color: var(--secondary-color);
     cursor: pointer;
+    transform: rotate(90deg);
 }
 .nav-links{
     display: flex;
@@ -97,7 +109,7 @@ nav {
 }
 .nav-links li a{
     text-decoration: none;
-    color: white;    
+    color: var(--secondary-color);    
 }
 .nav-links li a:hover{
     transition: 0.1s ease-out;
@@ -469,7 +481,8 @@ main {
     box-sizing: border-box;
     /* margin: 10px; */
     height: auto;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.418);
+    box-shadow: 10px 10px 50px rgb(0 0 0 / 18%);
+
     /* box-shadow: var(--shadow); */
 
 }
@@ -678,7 +691,7 @@ main {
     .hpText {
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 40px;
     }
 
     .hpText h1 {
@@ -1119,7 +1132,7 @@ main {
     }
     .hpText{
         width: 100%;
-        margin-top: 120px;
+        margin-top: 50px;
     }
     .hpText h1{
         text-align: center;
