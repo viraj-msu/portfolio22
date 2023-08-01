@@ -1,0 +1,105 @@
+/* @import url('http://fonts.cdnfonts.com/css/mark-pro'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.125s ease 0s;
+}
+
+:root {
+  --primary-color: #10101a;
+  --secondary-color: aliceblue;
+  --third-color: #191929;
+  --shadow: 0px 0px 50px rgba(0, 0, 0, 0.413);
+  --review-color: #050810;
+}
+
+.lightTheme {
+  --primary-color: aliceblue;
+  --secondary-color: rgb(10, 8, 15);
+  --third-color: rgb(221, 227, 232);
+  --shadow: 15px 15px 50px rgba(0, 0, 0, 0.2);
+  --review-color: rgb(200, 207, 213);
+}
+/* hr{
+    background-color: var(--secondary-color);
+    height: 2px;
+    border: none;
+} */
+
+body {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  /* font-family: 'Mark Pro', sans-serif; */
+  font-family: "Poppins", sans-serif;
+  /* position: relative; */
+}
+
+.gallery-text {
+  margin: 50px 0;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.odd{
+  width: 20vw;
+  height: 600px;
+  background-color: #929292;
+  margin-top: 20px;
+}
+
+.even{
+  height: 300px;
+  width: 20vw;
+  margin-top: 20px;
+  /* width: 600;
+  height: 800; */
+  background-color: #ffb8b8;
+}
+
+img {
+  width: 100%;
+}
+
+.gallery {
+  display: flex;
+  padding: 50px;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex: 25%;
+  padding: 5px;
+}
+
+.column img {
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+.column img:active {
+  height: auto;
+  width: auto;
+  max-width: 80%;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  border: 10px solid #fff;
+  margin: 0px;
+  box-shadow: 0 0 1000px 1000px #fff8;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .column {
+    flex: 100%;
+  }
+}
